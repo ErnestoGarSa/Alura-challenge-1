@@ -141,3 +141,52 @@ body {
   font-size: 1rem;
   background-color: white;
 }
+
+/* Tablets */
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .logo__img {
+    margin: 4rem 0;
+  }
+
+  .encriptar {
+    width: 100%;
+  }
+
+  .encriptar__input {
+    width: 42rem;
+  }
+
+  .encriptar__exclamacion {
+    width: 1rem;
+    height: 1rem;
+    align-self: center;
+  }
+
+  .resultado {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .resultado__buscar img {
+    display: none;
+  }
+
+  .resultado__buscar h3 {
+    margin-top: 2rem;
+  }
+
+  .codificado {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  #copiar {
+    width: 100%;
+  }
+}
