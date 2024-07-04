@@ -1,0 +1,143 @@
+:root {
+  --azul-principal: #0a3871;
+  --gris-exclamacion: #495057;
+  --gris-boton: #d8dfe8;
+  --fondo-principal: rgb(243, 245, 253);
+  --gris-buscar: #343a40;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo-principal);
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.logo {
+  width: auto;
+}
+
+.logo__img {
+  margin: 2rem 0;
+}
+
+.encriptar {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.encriptar__input {
+  width: 36rem;
+  font-size: 2rem;
+  border: none;
+  color: var(--azul-principal);
+  background-color: var(--fondo-principal);
+}
+
+.encriptar__mensaje {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--gris-exclamacion);
+}
+
+.encriptar__exclamacion {
+  width: 1rem;
+  height: 1rem;
+  align-self: center;
+}
+
+.encriptar__botones {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+#encriptar {
+  width: 20.5rem;
+  padding: 1.5rem;
+  background-color: var(--azul-principal);
+  color: white;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--azul-principal);
+}
+
+#desencriptar {
+  width: 20.5rem;
+  padding: 1.5rem;
+  background-color: var(--gris-boton);
+  color: var(--azul-principal);
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--azul-principal);
+}
+
+.resultado {
+  width: 30%;
+  padding: 2rem;
+}
+
+.resultado__total {
+  background-color: white;
+  border-radius: 2rem;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultado__buscar img {
+  height: 19rem;
+  width: 21;
+  margin-bottom: 2rem;
+}
+
+.resultado__buscar h3 {
+  width: 21;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--gris-buscar);
+  font-size: 1.5rem;
+}
+
+.resultado__buscar p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: var(--gris-exclamacion);
+}
+
+.codificado {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  text-align: start;
+  font-size: 1.2rem;
+  color: var(--gris-exclamacion);
+}
+
+#copiar {
+  width: 21rem;
+  padding: 1.5rem;
+  color: var(--azul-principal);
+  border: 1px solid var(--azul-principal);
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  background-color: white;
+}

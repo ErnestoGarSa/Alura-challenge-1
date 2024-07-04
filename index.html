@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Challenge - Encriptador</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="logo">
+        <img class="logo__img" src="./assets/Logo.png" alt="" />
+      </section>
+      <section class="encriptar">
+        <textarea type="text" class="encriptar__input" rows="10">
+Ingrese el texto aqui</textarea
+        >
+        <div class="encriptar__zonaBotones">
+          <div class="encriptar__exclmacion__total">
+            <p class="encriptar__mensaje">
+              <img
+                class="encriptar__exclamacion"
+                src="./assets/bi_exclamation-circle-fill.png"
+                alt=""
+              />Solo letras en minúsculas y sin acentos
+            </p>
+          </div>
+          <div class="encriptar__botones">
+            <button id="encriptar">Encriptar</button
+            ><button id="desencriptar">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+      <section class="resultado">
+        <div class="resultado__total">
+          <div class="resultado__buscar" hidden>
+            <img src="./assets/Muñeco.png" alt="" />
+            <h3>Ningún mensaje fue encontrado</h3>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+          </div>
+          <div class="codificado">
+            <h2 id="codificado">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              blanditiis unde cupiditate hic quae. Cum ex voluptatem dolor hic
+              perspiciatis libero. Perferendis, voluptas recusandae. Quaerat
+              laudantium veritatis nam sit vel?
+            </h2>
+            <button id="copiar">Copiar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>
