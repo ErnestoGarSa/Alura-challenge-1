@@ -18,7 +18,7 @@ body {
 
 .main {
   display: flex;
-  height: 100vh;
+  height: 95vh;
 }
 
 .logo {
@@ -142,50 +142,49 @@ body {
   background-color: white;
 }
 
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #03f026;
+  width: 100%;
+}
+
 /* Tablets */
+
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   .main {
     display: flex;
     flex-direction: column;
     height: 100vh;
   }
-
   .logo__img {
     margin: 4rem 0;
   }
-
   .encriptar {
     width: 100%;
   }
-
   .encriptar__input {
     width: 42rem;
   }
-
   .encriptar__exclamacion {
     width: 1rem;
     height: 1rem;
     align-self: center;
   }
-
   .resultado {
     width: 100%;
     padding: 2rem;
   }
-
   .resultado__buscar img {
     display: none;
   }
-
   .resultado__buscar h3 {
     margin-top: 2rem;
   }
-
   .codificado {
     padding: 2rem;
     gap: 1.5rem;
   }
-
   #copiar {
     width: 100%;
   }
@@ -197,25 +196,20 @@ body {
     flex-direction: column;
     height: 100vh;
   }
-
   .logo__img {
     margin: 2rem -1.5rem;
   }
-
   .encriptar {
     width: 100%;
     padding: 1.5rem;
   }
-
   .encriptar__input {
     width: 100%;
     font-size: 1.3rem;
   }
-
   .encriptar__zonaBotones {
     width: 100%;
   }
-
   .encriptar__botones {
     display: flex;
     flex-direction: column;
@@ -223,34 +217,27 @@ body {
     gap: 2rem;
     margin-top: 0.5rem;
   }
-
   #encriptar {
     width: 100%;
   }
-
   #desencriptar {
     width: 100%;
   }
-
   .resultado {
     width: 100%;
     padding-top: 0;
   }
-
   .resultado__buscar img {
     display: none;
   }
-
   .resultado__buscar h3 {
     margin-top: 2rem;
   }
-
   .codificado {
     gap: 1.5rem;
     width: 100%;
     padding: 0;
   }
-
   #copiar {
     width: 90%;
     margin-bottom: 1rem;
