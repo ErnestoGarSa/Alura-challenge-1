@@ -6,13 +6,19 @@
     <title>Alura Challenge - Encriptador</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <main class="main">
       <section class="logo">
         <img class="logo__img" src="./assets/Logo.png" alt="" />
       </section>
       <section class="encriptar">
-        <textarea type="text" class="encriptar__input" rows="10">
+        <textarea
+          type="text"
+          class="encriptar__input"
+          rows="10"
+          onfocus="this.value=''"
+        >
 Ingrese el texto aqui</textarea
         >
         <div class="encriptar__zonaBotones">
@@ -27,19 +33,21 @@ Ingrese el texto aqui</textarea
           </div>
           <div class="encriptar__botones">
             <button id="encriptar">Encriptar</button
-            ><button id="desencriptar">Desencriptar</button>
+            ><button id="desencriptar" onclick="desencriptar()">
+              Desencriptar
+            </button>
           </div>
         </div>
       </section>
       <section class="resultado">
-        <div class="resultado__total" hidden>
+        <div class="resultado__total">
           <div class="resultado__buscar">
             <img src="./assets/Muñeco.png" alt="" />
             <h3>Ningún mensaje fue encontrado</h3>
             <p>Ingresa el texto que deseas encriptar o desencriptar</p>
           </div>
           <div class="codificado">
-            <h2 id="codificado">Lorem</h2>
+            <h2 id="codificado"></h2>
             <button id="copiar">Copiar</button>
           </div>
         </div>
