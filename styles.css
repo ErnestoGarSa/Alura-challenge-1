@@ -145,8 +145,19 @@ body {
 .footer {
   text-align: center;
   padding: 2rem;
-  background-color: #03f026;
+  background-color: #274156;
   width: 100%;
+  color: white;
+}
+
+.footer a {
+  color: #33b4eb;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: #33b4eb;
+  text-decoration: none;
 }
 
 /* Tablets */
